@@ -1,0 +1,25 @@
+﻿Model Name,F1 Score,AUC,Notes
+Logistic Regression 1,0,0.65,Initial Model
+Logistic Regression 1.5,0.58,0.83,Added min max scalar
+Logistic Regression 2,0.51,0.82,Added weight balancing
+Logistic Regression 3,0.53,0.83,"Hyper Parameter tuning:  {C = 1, max_iter = 6600}"
+Logistic Regression 4,0.55,0.83,"Hyper Parameter tuning:  {C = 10, max_iter = 6600}"
+Random Forest 1,0.25,0.76,Initial Model
+Random Forest 2,0.23,0.76,Added weight balancing
+Random Forest 3,0.395,0.77,"Parameters:  { max_depth = 20, max_features = 'auto', min_samples_leaf =  4, min_samples_split =  10, n_estimators = 100}"
+Random Forest 4,0.297,0.78,"Parameters :  { max_depth =  None, max_features = 'auto', min_samples_leaf =  1, min_samples_split =  5, n_estimators = 1800}"
+Random Forest 5,0.3,0.76,"Parameters:  { max_depth =  3, max_features = 'auto', min_samples_leaf =  5, min_samples_split = 25, n_estimators = 30}"
+XG Boost 1,0.36,0.78,"Initial Values:  (objective = 'binary:logistic', n_estimators = 10, use_label_encoder = False)}"
+XG Boost 2,0.36,0.78,"Parameters:  {'subsample': 1,
+ 'min_child_weight': 10,
+ 'max_depth': 8,
+ 'learning_rate': 0.5,
+ 'gama': 0,
+ 'colsample_bytree': 1}"
+XG Boost 3,0.37,0.81,"Parameters:  {'subsample': .75,
+ 'min_child_weight': 4,
+ 'max_depth': 8,
+ 'learning_rate': 0.7,
+ 'gama': 0,
+ 'colsample_bytree': .5}"
+XG Boost 4,0.35,0.81,Increased verbosity from 0 to .3 to balance weights

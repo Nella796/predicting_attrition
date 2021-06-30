@@ -1,0 +1,5 @@
+﻿Model Name,Logistic Regression 3
+Class_weight,balanced
+C (regularization strength),1
+max_iter,6600
+,
